@@ -1,0 +1,163 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: none;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #e8e6e7;
+}
+
+header {
+    background-color: #1d1d1f;
+    padding: 10px 70px;
+}
+
+.navigation {
+    display: flex; /*cada item ficará alinhado um ao lado do outro*/
+    align-items: center; /*alinhar ao centro*/
+    justify-content: space-between;
+}
+
+.navigation .logo {
+    width: 50px;
+}
+
+.navigation ul {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.navigation ul li a {
+    color: #888;
+    font-weight: 600;
+    padding-bottom: 3px; /*distancia que irá aparecer a linha abaixo ao passar o mouse por cima*/
+    transition: all .2s ease-in-out;
+    /* 1. all significa todas as coisas que podem ser animadas, como: cor, background-color, width, height
+    2. ease-in-out significa que a animação vai começar devagar, acelerar no meio e desacelerar no final*/
+}
+
+.navigation ul li a:hover {
+    color: #e8e6e7;
+    border-bottom: 1px solid #e8e6e7; /*ao inves de text-decoration: underline; podemos utilizar dessa maneira, pois não fica muito grudado e é possível modificar a distância*/
+}
+
+.navigation .check {
+    color: #e8e6e7;
+    border-bottom: 1px solid #e8e6e7;
+}
+
+main section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5rem 10rem;
+}
+
+.main-text img{
+    width: 15rem;
+    margin-bottom: 3vh;
+}
+
+.main-text h1 {
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+}
+
+.main-text p {
+    margin-bottom: 1.5rem;
+}
+
+.main-text h2 {
+    color: #8a8a8a;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.main-text .btn {
+    background-color: #0071e3;
+    padding: 10px 15px;
+    border-radius: 25px;
+    color: white;
+    font-size: 1.5rem;
+    transition: all .2s;
+}
+
+.main-text .btn:hover {
+    opacity: 0.80;
+}
+
+.main-text .text h3 {
+    font-size: 1.3rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: #444;
+}
+
+.main-text .content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.main-text .content span{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 1px 1px #888;
+    transition: all .3s;
+}
+
+.main-text .content span:hover {
+    opacity: .8;
+}
+
+#green {
+    background-color: #384937;
+}
+
+#pink {
+    background-color: #f8ddd6;
+}
+
+#blue {
+    background-color: #225f7e;
+}
+
+#black {
+    background-color: #192028;
+}
+
+#white {
+    background-color: #f7f2ee;
+}
+
+#red {
+    background-color: #ae0617;
+}
+
+.main-img {
+    transition: all 1s ease;
+    z-index: 100;
+}
+
+.main-img img {
+    width: 450px;
+    padding-left: 60px;
+    transform: rotate(-7deg); /*rotacionar*/
+}
+
+.circle {
+    background-color: #445c42;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    clip-path: circle(800px at right 1000px);
+}
